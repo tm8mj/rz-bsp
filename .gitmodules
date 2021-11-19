@@ -4,21 +4,12 @@
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky
-[submodule "meta-linaro"]
-	path = meta-linaro
-	url = git://git.linaro.org/openembedded/meta-linaro.git
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
 [submodule "meta-gplv2"]
 	path = meta-gplv2
 	url = http://git.yoctoproject.org/cgit.cgi/meta-gplv2
-[submodule "meta-qt5"]
-	path = meta-qt5
-	url = https://github.com/meta-qt5/meta-qt5.git
-[submodule "meta-virtualization"]
-	path = meta-virtualization
-	url = https://git.yoctoproject.org/git/meta-virtualization
 [submodule "rzg2_bsp_scripts"]
 	path = rzg2_bsp_scripts
 	url = https://github.com/renesas-rz/rzg2_bsp_scripts
