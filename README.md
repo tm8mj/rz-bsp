@@ -58,7 +58,7 @@ Common targets are:
 	EK874 RZ/G2E board: ek874  
 	RZ/G2L Evaluation Board Kit PMIC version: smarc-rzg2l  
 	RZ/G2LC Evaluation Board Kit: smarc-rzg2lc  
-	RZ/G2UL Evaluation Board Kit: smarc-rzg2ul
+	RZ/G2UL Evaluation Board Kit: smarc-rzg2ul  
 	RZ/V2L Evaluation Board Kit: smarc-rzv2l
 	
 	`cp ../meta-renesas/docs/template/conf/<board>/*.conf ./conf/`
