@@ -2,6 +2,8 @@
 
 Renesas RZ BSP environment setup (experimental).
 
+Please note that Panfrost is not part of the official Renesas BSP package.
+
 ## Instructions
 
 Clone this particular branch with the following command:
