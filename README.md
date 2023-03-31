@@ -8,7 +8,7 @@ Please note that Panfrost is not part of the official Renesas BSP package.
 
 Clone this particular branch with the following command:
 
-	git clone --recursive -b dunfell/rzg2l_updated https://github.com/renesas-rz/rz-bsp.git
+	git clone --recursive -b dunfell/rz https://github.com/renesas-rz/rz-bsp.git
 
 There are two options to configure and setp the environment afterwards:
 
