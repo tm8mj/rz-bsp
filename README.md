@@ -24,10 +24,11 @@ You can use the setup script: bsp_setup.sh:
 
 	    -b  board for which you want build the BSP
 		rzg2l rzg2lc rzg2ul rzv2l rzg2h rzg2m rzg2n ek874
+		rzfive(BSP-3.0.2 onwards) 
 
 	    -v  version of BSP (default BSP-3.0.0)
 		BSP-3.0.0 BSP-3.0.0-update1 BSP-3.0.0-update2
-		BSP-3.0.1 BSP-3.0.2 BSP-3.0.2-update1
+		BSP-3.0.1 BSP-3.0.2 BSP-3.0.2-update1 BSP-3.0.3
 
 	    -p  enable panfrost graphics for supported boards (default disabled)
 		Supported boards: rzg2l rzg2lc rzv2l
@@ -47,12 +48,15 @@ Common targets are:
 	source poky/oe-init-build-env  
 
 2. Checkout the tag for the relevant BSP version. The supported versions are:   
-   `BSP-3.0.0 BSP-3.0.0-update1 BSP-3.0.0-update2 BSP-3.0.1 BSP-3.0.2 BSP-3.0.2-update1`
+   `BSP-3.0.0 BSP-3.0.0-update1 BSP-3.0.0-update2 BSP-3.0.1 BSP-3.0.2 BSP-3.0.2-update1 BSP-3.0.3`
    
    Use the following command to update the submodules:  
    `git submodule update --init --recursive`
+   
+3. Setup the build environment by running the command below:
+   `source poky/oe-init-build-env`
 	
-3. Prepare the configuration files for the target board. Run the commands below in build directory. Please replace _**board**_ by the name below:  
+4. Prepare the configuration files for the target board. Run the commands below in build directory. Please replace _**board**_ by the name below:  
 
 	HiHope RZ/G2H board: hihope-rzg2h  
 	HiHope RZ/G2M board: hihope-rzg2m  
@@ -61,11 +65,12 @@ Common targets are:
 	RZ/G2L Evaluation Board Kit PMIC version: smarc-rzg2l  
 	RZ/G2LC Evaluation Board Kit: smarc-rzg2lc  
 	RZ/G2UL Evaluation Board Kit: smarc-rzg2ul  
-	RZ/V2L Evaluation Board Kit: smarc-rzv2l
+	RZ/V2L Evaluation Board Kit: smarc-rzv2l  
+	RZ/FIVE Evaluation Board Kit: smarc-rzfive (BSP-3.0.2 onwards)
 	
 	`cp ../meta-renesas/docs/template/conf/<board>/*.conf ./conf/`
 
-4. If you want to add support for panfrost, please run the following command within the build directory:  
+5. If you want to add support for panfrost, please run the following command within the build directory:  
 	`bitbake-layers add-layer meta-rz-panfrost`  
 	
    Afterwards, add the followng to build/conf/local.conf:  
@@ -74,7 +79,7 @@ Common targets are:
 	
 	`IMAGE_INSTALL_append += " mesa weston kmscube"`
 
-5. Build the image of your choice with the command:  
+6. Build the image of your choice with the command:  
 
 	`bitbake <target>`
 	
