@@ -53,7 +53,7 @@ Common targets are:
    Use the following command to update the submodules:  
    `git submodule update --init --recursive`
    
-3. Setup the build environment by running the command below:
+3. Setup the build environment by running the command below:  
    `source poky/oe-init-build-env`
 	
 4. Prepare the configuration files for the target board. Run the commands below in build directory. Please replace _**board**_ by the name below:  
