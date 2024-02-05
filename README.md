@@ -62,7 +62,7 @@ Common targets are:
 	source poky/oe-init-build-env  
 
 2. Checkout the tag for the relevant BSP version. The supported versions are:   
-   `BSP-3.0.3 BSP-3.0.4 BSP-3.0.5`
+	`BSP-3.0.3 BSP-3.0.4 BSP-3.0.5 BSP-3.0.5-update1 BSP-3.0.5-update2 BSP-3.0.5-update3`
    
    Use the following command to update the submodules:  
    `git submodule update --init --recursive`
