@@ -27,7 +27,7 @@ You can use the setup script: bsp_setup.sh:
 		rzfive 
 
 	    -v  version of BSP (default BSP-3.0.3)
-		BSP-3.0.3 BSP-3.0.4 BSP-3.0.5 BSP-3.0.5-update1
+		BSP-3.0.3 BSP-3.0.4 BSP-3.0.5 BSP-3.0.5-update1 BSP-3.0.5-update2 BSP-3.0.5-update3
 
 	    -p  enable panfrost graphics for supported boards (default disabled)
 		Supported boards: rzg2l rzg2lc rzv2l
